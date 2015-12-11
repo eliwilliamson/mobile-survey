@@ -4,4 +4,4 @@ This prototype demonstrates what a conversational mobile/SMS survey would look l
 
 ## For Developers (please ignore)
 
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/TwilioDevEd/survey-node)
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/eliwilliamson/mobile-survey)
