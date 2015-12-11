@@ -1,6 +1,6 @@
 {
-  "name": "Twilio: Automated Survey",
-  "description": "This sample application powers automated surveys via voice calls and SMS.",
+  "name": "Wellbeing 5: Mobile Survey Prototype",
+  "description": "This is a proof of concept SMS survey for the WB5.",
   "keywords": [
     "twilio",
     "node.js",
