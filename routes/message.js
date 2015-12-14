@@ -68,8 +68,8 @@ module.exports = function(request, response) {
         }
 
         // Add follow conditional follow up question
-        if (question.followUpTrigger !=== 0) {
-            respond(question.followUp);
+        if (question.followUpTriggers !== 0) {
+            return respond(question.followUp);
         }
 
         // reply with message

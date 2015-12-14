@@ -10,8 +10,8 @@ module.exports = [
     },
     {
         text: 'Have there been times in the past twelve months when you did not have enough money?',
-        type: 'boolean'
-        followUpTrigger: 'yes', 'y'
+        type: 'boolean',
+        followUpTriggers: 'yes' || 'y',
         followUp: 'Was that A.) To pay for health care and/or medicines that you or your family needed? or B.) To buy food that you or your family needed? Please respond "A" or "B"'
     },
     {
