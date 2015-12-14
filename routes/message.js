@@ -62,9 +62,9 @@ module.exports = function(request, response) {
         responseMessage += question.text;
 
         // Add question instructions for special types
-        if (question.type === 'boolean') {
-            responseMessage += " Yes, No, or IDK for 'I don't know'";
-        }
+        // if (question.type === 'boolean') {
+        //     responseMessage += " – Yes, No, or IDK for 'I don't know'";
+        // }
 
         // Add follow conditional follow up question
         if (question.followUpTriggers !== 0) {
