@@ -45,18 +45,18 @@ module.exports = function(request, response) {
         var responseMessage = '';
 
         if (err || !surveyResponse) {
-            return respond('Terribly sorry, but an error has occurred. '
-                + 'Please retry your message.');
+            return respond('I am terribly sorry, but an error has occurred. '
+                + 'Please retry responding.');
         }
 
         // If question is null, we're done!
         if (!question) {
-            return respond('Thank you for taking this survey. Goodbye!');
+            return respond('Woohoo! I feel like i have a much better picture of where you stand and how Healthways can help you live a healthier life.');
         }
 
         // Add a greeting if this is the first question
         if (questionIndex === 0) {
-            responseMessage += 'Thank you for taking our survey! ';
+            responseMessage += 'Hello there! I am Eli your personal wellness scientist. I am here to better understand where you think you stand regarding your health. Please help me better understand you a bit better. – ';
         }
 
         // Add question text
@@ -64,7 +64,12 @@ module.exports = function(request, response) {
 
         // Add question instructions for special types
         if (question.type === 'boolean') {
-            responseMessage += ' Type "yes" or "no".';
+            responseMessage += " Yes, No, or IDK for 'I don't know'";
+        }
+
+        // Add follow conditional follow up question
+        if (question.followUpTrigger !=== 0) {
+            respond(question.followUp);
         }
 
         // reply with message
