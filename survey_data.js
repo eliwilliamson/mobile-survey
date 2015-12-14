@@ -21,15 +21,19 @@ module.exports = [
         type: 'boolean'
     },
     {
-        text: 'Oh really, What kind of tobacco products do you use?',
-        type: 'text'
+        text: 'Oh really, do you smoke or use smokeless tobacco? – please respond with "Smoke" or "Smokeless"',
+        type: 'boolean'
     },
     {
         text: 'What is your approximate weight?',
         type: 'number'
     },
     {
-        text: 'Would you like to reduce that number this year or just maintain a healthy constant?',
-        type: 'number'
+        text: 'Would you like to reduce that number this year or just maintain a healthy constant? – Please respond with "Reduce" or "Maintain".',
+        type: 'boolean'
+    },
+    {
+        text: 'Is there anything else you would like to let me know?',
+        type: 'text'
     }
 ];
