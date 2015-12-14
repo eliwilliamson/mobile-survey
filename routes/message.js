@@ -51,13 +51,13 @@ module.exports = function(request, response) {
         // If question is null, we're done!
         if (!question) {
             respond('Woohoo! I feel like i have a much better picture of where you stand and how Healthways can help you live a healthier life.');
-            respond('Based what I have gathered, It sounds like you might benefit from using our QuitNet app to quit smoking');
-            return respond('Check it out here: https://itunes.apple.com/us/app/quitnet-stop-smoking-quit/id968824591?mt=8#');
+            message('Based what I have gathered, It sounds like you might benefit from using our QuitNet app to quit smoking');
+            return message('Check it out here: https://itunes.apple.com/us/app/quitnet-stop-smoking-quit/id968824591?mt=8#');
         }
 
         // Add a greeting if this is the first question
         if (questionIndex === 0) {
-            responseMessage += 'Hello there! I am Eli your personal wellness scientist. I am here to better understand where you think you stand regarding your health. Please help me better understand you a bit better. – ';
+            responseMessage += 'Hello there! I am Eli your personal wellness scientist. I am here to better understand where you think you stand regarding your health. Please help me to better understand you – ';
         }
 
         // Add question text
