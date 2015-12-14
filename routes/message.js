@@ -51,6 +51,8 @@ module.exports = function(request, response) {
         // If question is null, we're done!
         if (!question) {
             return respond('Woohoo! I feel like i have a much better picture of where you stand and how Healthways can help you live a healthier life.');
+            return respond('Based what I have gathered, It sounds like you might benefit from using our QuitNet app to quit smoking');
+            return respond('Check it out here: https://itunes.apple.com/us/app/quitnet-stop-smoking-quit/id968824591?mt=8#');
         }
 
         // Add a greeting if this is the first question

@@ -5,23 +5,31 @@ module.exports = [
         type: 'number'
     },
     {
-        text: 'Where do you think you will stand about five years from now? Please respond with a number 1-10',
+        text: 'I am happy to hear that! Where do you think you will stand about five years from now? Please respond with a number 1-10',
         type: 'number'
     },
     {
-        text: 'Have there been times in the past twelve months when you did not have enough money? – Yes, No, or IDK for "I do not know"',
+        text: 'It is important to have goals. Have there been times in the past twelve months when you did not have enough money? – Yes, No, or IDK for "I do not know"',
         type: 'boolean'
     },
     {
-        text: 'Was that A.) To pay for health care and/or medicines that you or your family needed? or B.) To buy food that you or your family needed? – Please respond "A" or "B"',
+        text: 'I am sorry to hear that. Was that because you A.) To pay for health care and/or medicines that you or your family needed? or B.) To buy food that you or your family needed? – Please respond "A" or "B"',
         type: 'boolean'
     },
     {
-        text: 'Do you smoke? – Yes, No, or IDK for "I do not know"',
+        text: 'Do you use tobacco products? – Yes or No',
         type: 'boolean'
+    },
+    {
+        text: 'Oh really, What kind of tobacco products do you use?',
+        type: 'text'
     },
     {
         text: 'What is your approximate weight?',
+        type: 'number'
+    },
+    {
+        text: 'Would you like to reduce that number this year or just maintain a healthy constant?',
         type: 'number'
     }
 ];
