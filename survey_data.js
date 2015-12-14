@@ -10,10 +10,10 @@ module.exports = [
     },
     {
         text: 'Have there been times in the past twelve months when you did not have enough money? – Yes, No, or IDK for "I do not know"',
-        type: 'boolean',
+        type: 'boolean'
     },
     {
-        text: 'Was that A.) To pay for health care and/or medicines that you or your family needed? or B.) To buy food that you or your family needed? – Please respond "A" or "B"'
+        text: 'Was that A.) To pay for health care and/or medicines that you or your family needed? or B.) To buy food that you or your family needed? – Please respond "A" or "B"',
         type: 'boolean'
     },
     {
