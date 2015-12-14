@@ -15,8 +15,7 @@ module.exports = function(request, response) {
         response.send(twiml.toString());
     }
 
-    // Check if there are any responses for the current number in an incomplete
-    // survey response
+    // Check if there are any responses for the current number in an incomplete survey response
     SurveyResponse.findOne({
         phone: phone,
         complete: false
