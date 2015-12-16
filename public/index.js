@@ -82,49 +82,12 @@ $(function() {
         });
     }
 
-    // Chart yes/no responses to lemur question
-    // function lemurs(results) {
-    //     // Collect lemur kicking results
-    //     var yes = 0,
-    //         no = 0;
-    //     for (var i = 0, l = results.length; i < l; i++) {
-    //         var lemurResponse = results[i].responses[1];
-    //         lemurResponse.answer ? yes++ : no++;
-    //     }
-
-    //     var ctx = document.getElementById('lemurChart').getContext('2d');
-    //     var ageChart = new Chart(ctx).Pie([{
-    //         value: yes,
-    //         label: 'Yes',
-    //         color: 'green',
-    //         highlight: 'gray'
-    //     }, {
-    //         value: no,
-    //         label: 'No',
-    //         color: 'red',
-    //         highlight: 'gray'
-    //     }]);
-    // }
-
-    // poor man's html template for a response table row
-    // function row(response) {
-    //     var tpl = '<tr><td>';
-    //     tpl += response.answer || 'pending...' + '</td>';
-    //     if (response.recordingUrl) {
-    //         tpl += '<td><a target="_blank" href="' + response.recordingUrl + '"><i class="fa fa-play"></i></a></td>';
-    //     } else {
-    //         tpl += '<td>N/A</td>';
-    //     }
-    //     tpl += '</tr>';
-    //     return tpl;
-    // }
-
     // add text responses to a table
     function freeText1(results) {
         var $responses = $('#feedbackResponses');
         var content = '';
         for (var i = 0, l = results.length; i < l; i++) {
-            var feedbackResponse = results[i].responses[3];
+            var feedbackResponse = results[i].responses[8];
             content += row(feedbackResponse);
         }
         $responses.append(content);

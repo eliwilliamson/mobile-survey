@@ -9,20 +9,20 @@ module.exports = [
         type: 'number'
     },
     {
-        text: 'It is important to have goals. Have there been times in the past twelve months when you did not have enough money? – Yes, No, or IDK for "I do not know"',
-        type: 'boolean'
+        text: 'It is important to have goals. Have there been times in the past twelve months when you did not have enough money? – Yes or No, or IDK for "I do not know"',
+        type: 'text'
     },
     {
         text: 'I am sorry to hear that. Was that because you A.) To pay for health care and/or medicines that you or your family needed? or B.) To buy food that you or your family needed? – Please respond "A" or "B"',
-        type: 'boolean'
+        type: 'text'
     },
     {
         text: 'Do you use tobacco products? – Yes or No',
-        type: 'boolean'
+        type: 'text'
     },
     {
         text: 'Oh really, do you smoke or use smokeless tobacco? – please respond with "Smoke" or "Smokeless"',
-        type: 'boolean'
+        type: 'text'
     },
     {
         text: 'What is your approximate weight?',
@@ -30,7 +30,7 @@ module.exports = [
     },
     {
         text: 'Would you like to reduce that number this year or just maintain a healthy constant? – Please respond with "Reduce" or "Maintain".',
-        type: 'boolean'
+        type: 'text'
     },
     {
         text: 'Is there anything else you would like to let me know?',
