@@ -88,8 +88,6 @@ $(function() {
         tpl += response.answer || 'pending...' + '</td>';
         if (response.recordingUrl) {
             tpl += '<td><a target="_blank" href="' + response.recordingUrl + '"><i class="fa fa-play"></i></a></td>';
-        } else {
-            tpl += '<td>N/A</td>';
         }
         tpl += '</tr>';
         return tpl;
