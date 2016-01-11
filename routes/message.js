@@ -50,7 +50,7 @@ module.exports = function(request, response) {
 
         // If question is null, we're done!
         if (!question) {
-            return respond('Woohoo! I feel like i have a much better picture of where you stand and how Healthways can help you live a healthier life. I have calculated your Well-being 5 score as a 71/100. I believe we can improve that score over this coming year. Based what I have gathered, you might benefit from using our QuitNet app to quit smoking. – Check it out here: https://itunes.apple.com/us/app/quitnet-stop-smoking-quit/id968824591?mt=8#');
+            return respond('Woohoo! I feel like i have a much better picture of where you stand and how Healthways can help you live a healthier life. I have calculated your Well-being 5 score as a 78/100. I believe we can improve that score over this coming year. Based what I have gathered, you might benefit from using our QuitNet app to quit smoking. – Check it out here: https://itunes.apple.com/us/app/quitnet-stop-smoking-quit/id968824591?mt=8#');
         }
 
         // Add a greeting if this is the first question
